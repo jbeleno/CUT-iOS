@@ -7,25 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2618F2751BCC6D5C00A04DC8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2620FD0A1BCC6B3700752FF5 /* Accounts.framework */; };
+		2618F2761BCC6D7400A04DC8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2620FD081BCC6B2E00752FF5 /* Social.framework */; };
+		2618F2771BCC6D7A00A04DC8 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2618F2731BCC6B6D00A04DC8 /* Twitter.framework */; };
+		2618F27A1BCC93B800A04DC8 /* TimelineHashtagTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2618F2791BCC93B800A04DC8 /* TimelineHashtagTwitter.m */; settings = {ASSET_TAGS = (); }; };
+		263A734A1BD32C610002D58D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A73491BD32C610002D58D /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		263A734D1BD330C30002D58D /* EventoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A734C1BD330C30002D58D /* EventoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		263A73501BD332160002D58D /* ConsultasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A734F1BD332160002D58D /* ConsultasViewController.m */; settings = {ASSET_TAGS = (); }; };
 		2663C2371BC9F8DA0088BA86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2361BC9F8DA0088BA86 /* main.m */; };
 		2663C23A1BC9F8DA0088BA86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2391BC9F8DA0088BA86 /* AppDelegate.m */; };
-		2663C23D1BC9F8DA0088BA86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C23C1BC9F8DA0088BA86 /* ViewController.m */; };
 		2663C2401BC9F8DA0088BA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663C23E1BC9F8DA0088BA86 /* Main.storyboard */; };
 		2663C2421BC9F8DA0088BA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2411BC9F8DA0088BA86 /* Assets.xcassets */; };
 		2663C2451BC9F8DA0088BA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2431BC9F8DA0088BA86 /* LaunchScreen.storyboard */; };
+		2663C2541BCA00A00088BA86 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2531BCA00A00088BA86 /* FeedTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2663C2571BCA00D20088BA86 /* ArticulosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2561BCA00D20088BA86 /* ArticulosTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		2663C25A1BCA05300088BA86 /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2591BCA05300088BA86 /* FeedModel.m */; settings = {ASSET_TAGS = (); }; };
+		267F28FE1BD1D85C004BB9AC /* EventosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F28FD1BD1D85C004BB9AC /* EventosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		267F29011BD1D8AC004BB9AC /* EventoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F29001BD1D8AC004BB9AC /* EventoTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		267F29041BD1DE2B004BB9AC /* EventosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F29031BD1DE2B004BB9AC /* EventosModel.m */; settings = {ASSET_TAGS = (); }; };
+		2689BEFE1BCC34F600AB02D9 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689BEFD1BCC34F600AB02D9 /* SidebarTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2689BF011BCC66F500AB02D9 /* TimelineCuentaTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689BF001BCC66F500AB02D9 /* TimelineCuentaTwitter.m */; settings = {ASSET_TAGS = (); }; };
+		269483731BD123C1001C5B21 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269483721BD123C1001C5B21 /* InformacionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		269995011BD4497E007AD77B /* LabelAjustado.m in Sources */ = {isa = PBXBuildFile; fileRef = 269995001BD4497E007AD77B /* LabelAjustado.m */; settings = {ASSET_TAGS = (); }; };
+		26C421AD1BCA0CFE00DCEC77 /* Mensajes.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C421AC1BCA0CFE00DCEC77 /* Mensajes.m */; settings = {ASSET_TAGS = (); }; };
+		F2E421917A6B2D2F3DC6FA00 /* libPods-app-cut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9466C71B820EB331A92D6F /* libPods-app-cut.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2618F2731BCC6B6D00A04DC8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		2618F2781BCC93B800A04DC8 /* TimelineHashtagTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineHashtagTwitter.h; sourceTree = "<group>"; };
+		2618F2791BCC93B800A04DC8 /* TimelineHashtagTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineHashtagTwitter.m; sourceTree = "<group>"; };
+		2620FD081BCC6B2E00752FF5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2620FD0A1BCC6B3700752FF5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		263A73481BD32C610002D58D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		263A73491BD32C610002D58D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		263A734B1BD330C30002D58D /* EventoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventoViewController.h; sourceTree = "<group>"; };
+		263A734C1BD330C30002D58D /* EventoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoViewController.m; sourceTree = "<group>"; };
+		263A734E1BD332160002D58D /* ConsultasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultasViewController.h; sourceTree = "<group>"; };
+		263A734F1BD332160002D58D /* ConsultasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultasViewController.m; sourceTree = "<group>"; };
 		2663C2321BC9F8DA0088BA86 /* app-cut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-cut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2663C2361BC9F8DA0088BA86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2663C2381BC9F8DA0088BA86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2663C2391BC9F8DA0088BA86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2663C23B1BC9F8DA0088BA86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2663C23C1BC9F8DA0088BA86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2663C23F1BC9F8DA0088BA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2663C2411BC9F8DA0088BA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2663C2441BC9F8DA0088BA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2663C2461BC9F8DA0088BA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2663C2521BCA00A00088BA86 /* FeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedTableViewController.h; sourceTree = "<group>"; };
+		2663C2531BCA00A00088BA86 /* FeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedTableViewController.m; sourceTree = "<group>"; };
+		2663C2551BCA00D20088BA86 /* ArticulosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticulosTableViewCell.h; sourceTree = "<group>"; };
+		2663C2561BCA00D20088BA86 /* ArticulosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticulosTableViewCell.m; sourceTree = "<group>"; };
+		2663C2581BCA05300088BA86 /* FeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedModel.h; sourceTree = "<group>"; };
+		2663C2591BCA05300088BA86 /* FeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedModel.m; sourceTree = "<group>"; };
+		267F28FC1BD1D85C004BB9AC /* EventosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosTableViewController.h; sourceTree = "<group>"; };
+		267F28FD1BD1D85C004BB9AC /* EventosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosTableViewController.m; sourceTree = "<group>"; };
+		267F28FF1BD1D8AC004BB9AC /* EventoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventoTableViewCell.h; sourceTree = "<group>"; };
+		267F29001BD1D8AC004BB9AC /* EventoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventoTableViewCell.m; sourceTree = "<group>"; };
+		267F29021BD1DE2B004BB9AC /* EventosModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventosModel.h; sourceTree = "<group>"; };
+		267F29031BD1DE2B004BB9AC /* EventosModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventosModel.m; sourceTree = "<group>"; };
+		2689BEFC1BCC34F600AB02D9 /* SidebarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarTableViewController.h; sourceTree = "<group>"; };
+		2689BEFD1BCC34F600AB02D9 /* SidebarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarTableViewController.m; sourceTree = "<group>"; };
+		2689BEFF1BCC66F500AB02D9 /* TimelineCuentaTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineCuentaTwitter.h; sourceTree = "<group>"; };
+		2689BF001BCC66F500AB02D9 /* TimelineCuentaTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineCuentaTwitter.m; sourceTree = "<group>"; };
+		269483711BD123C1001C5B21 /* InformacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformacionViewController.h; sourceTree = "<group>"; };
+		269483721BD123C1001C5B21 /* InformacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformacionViewController.m; sourceTree = "<group>"; };
+		269994FF1BD4497E007AD77B /* LabelAjustado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelAjustado.h; sourceTree = "<group>"; };
+		269995001BD4497E007AD77B /* LabelAjustado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelAjustado.m; sourceTree = "<group>"; };
+		26C421AB1BCA0CFE00DCEC77 /* Mensajes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mensajes.h; sourceTree = "<group>"; };
+		26C421AC1BCA0CFE00DCEC77 /* Mensajes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mensajes.m; sourceTree = "<group>"; };
+		8F9466C71B820EB331A92D6F /* libPods-app-cut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app-cut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5A716B1080585B66DBBFF3 /* Pods-app-cut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-cut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app-cut/Pods-app-cut.debug.xcconfig"; sourceTree = "<group>"; };
+		E77082522FDB8E2A3656E578 /* Pods-app-cut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-cut.release.xcconfig"; path = "Pods/Target Support Files/Pods-app-cut/Pods-app-cut.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2618F2771BCC6D7A00A04DC8 /* Twitter.framework in Frameworks */,
+				2618F2761BCC6D7400A04DC8 /* Social.framework in Frameworks */,
+				2618F2751BCC6D5C00A04DC8 /* Accounts.framework in Frameworks */,
+				F2E421917A6B2D2F3DC6FA00 /* libPods-app-cut.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +100,8 @@
 			children = (
 				2663C2341BC9F8DA0088BA86 /* app-cut */,
 				2663C2331BC9F8DA0088BA86 /* Products */,
+				B41D77DEA84C6B8540B0DDC8 /* Pods */,
+				FA4EF3D8FE915C3BBA569A29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +116,30 @@
 		2663C2341BC9F8DA0088BA86 /* app-cut */ = {
 			isa = PBXGroup;
 			children = (
+				26C421AA1BCA0CE000DCEC77 /* Tools */,
+				2663C25C1BCA05530088BA86 /* Celdas */,
+				2663C25B1BCA05410088BA86 /* Modelos */,
+				2663C23E1BC9F8DA0088BA86 /* Main.storyboard */,
 				2663C2381BC9F8DA0088BA86 /* AppDelegate.h */,
 				2663C2391BC9F8DA0088BA86 /* AppDelegate.m */,
-				2663C23B1BC9F8DA0088BA86 /* ViewController.h */,
-				2663C23C1BC9F8DA0088BA86 /* ViewController.m */,
-				2663C23E1BC9F8DA0088BA86 /* Main.storyboard */,
+				263A734E1BD332160002D58D /* ConsultasViewController.h */,
+				263A734F1BD332160002D58D /* ConsultasViewController.m */,
+				263A734B1BD330C30002D58D /* EventoViewController.h */,
+				263A734C1BD330C30002D58D /* EventoViewController.m */,
+				267F28FC1BD1D85C004BB9AC /* EventosTableViewController.h */,
+				267F28FD1BD1D85C004BB9AC /* EventosTableViewController.m */,
+				2663C2521BCA00A00088BA86 /* FeedTableViewController.h */,
+				2663C2531BCA00A00088BA86 /* FeedTableViewController.m */,
+				269483711BD123C1001C5B21 /* InformacionViewController.h */,
+				269483721BD123C1001C5B21 /* InformacionViewController.m */,
+				2689BEFC1BCC34F600AB02D9 /* SidebarTableViewController.h */,
+				2689BEFD1BCC34F600AB02D9 /* SidebarTableViewController.m */,
+				2689BEFF1BCC66F500AB02D9 /* TimelineCuentaTwitter.h */,
+				2689BF001BCC66F500AB02D9 /* TimelineCuentaTwitter.m */,
+				2618F2781BCC93B800A04DC8 /* TimelineHashtagTwitter.h */,
+				2618F2791BCC93B800A04DC8 /* TimelineHashtagTwitter.m */,
+				263A73481BD32C610002D58D /* WebViewController.h */,
+				263A73491BD32C610002D58D /* WebViewController.m */,
 				2663C2411BC9F8DA0088BA86 /* Assets.xcassets */,
 				2663C2431BC9F8DA0088BA86 /* LaunchScreen.storyboard */,
 				2663C2461BC9F8DA0088BA86 /* Info.plist */,
@@ -79,6 +156,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2663C25B1BCA05410088BA86 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				267F29021BD1DE2B004BB9AC /* EventosModel.h */,
+				267F29031BD1DE2B004BB9AC /* EventosModel.m */,
+				2663C2581BCA05300088BA86 /* FeedModel.h */,
+				2663C2591BCA05300088BA86 /* FeedModel.m */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		2663C25C1BCA05530088BA86 /* Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				2663C2551BCA00D20088BA86 /* ArticulosTableViewCell.h */,
+				2663C2561BCA00D20088BA86 /* ArticulosTableViewCell.m */,
+				267F28FF1BD1D8AC004BB9AC /* EventoTableViewCell.h */,
+				267F29001BD1D8AC004BB9AC /* EventoTableViewCell.m */,
+			);
+			name = Celdas;
+			sourceTree = "<group>";
+		};
+		26C421AA1BCA0CE000DCEC77 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				269994FF1BD4497E007AD77B /* LabelAjustado.h */,
+				269995001BD4497E007AD77B /* LabelAjustado.m */,
+				26C421AB1BCA0CFE00DCEC77 /* Mensajes.h */,
+				26C421AC1BCA0CFE00DCEC77 /* Mensajes.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		B41D77DEA84C6B8540B0DDC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA5A716B1080585B66DBBFF3 /* Pods-app-cut.debug.xcconfig */,
+				E77082522FDB8E2A3656E578 /* Pods-app-cut.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA4EF3D8FE915C3BBA569A29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2618F2731BCC6B6D00A04DC8 /* Twitter.framework */,
+				2620FD0A1BCC6B3700752FF5 /* Accounts.framework */,
+				2620FD081BCC6B2E00752FF5 /* Social.framework */,
+				8F9466C71B820EB331A92D6F /* libPods-app-cut.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +216,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2663C2491BC9F8DA0088BA86 /* Build configuration list for PBXNativeTarget "app-cut" */;
 			buildPhases = (
+				F621D515E7EA8A27D500A777 /* Check Pods Manifest.lock */,
 				2663C22E1BC9F8DA0088BA86 /* Sources */,
 				2663C22F1BC9F8DA0088BA86 /* Frameworks */,
 				2663C2301BC9F8DA0088BA86 /* Resources */,
+				D4211ABE931AABD305012C55 /* Copy Pods Resources */,
+				D7D48718C35F0F22D510BF9C /* Embed Pods Frameworks */,
+				2620FD071BCC697900752FF5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -110,6 +244,7 @@
 				TargetAttributes = {
 					2663C2311BC9F8DA0088BA86 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 28SW7WAG39;
 					};
 				};
 			};
@@ -144,14 +279,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2620FD071BCC697900752FF5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 82658fc5b27a5dee8ede8b97d915c427cc45298a d27911ccc78edf92b696ad8ba1308af89a9ded8b394ff955440203a14d00575d";
+		};
+		D4211ABE931AABD305012C55 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app-cut/Pods-app-cut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D48718C35F0F22D510BF9C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app-cut/Pods-app-cut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F621D515E7EA8A27D500A777 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2663C22E1BC9F8DA0088BA86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2663C23D1BC9F8DA0088BA86 /* ViewController.m in Sources */,
+				2663C2571BCA00D20088BA86 /* ArticulosTableViewCell.m in Sources */,
+				263A734A1BD32C610002D58D /* WebViewController.m in Sources */,
+				269995011BD4497E007AD77B /* LabelAjustado.m in Sources */,
+				2663C25A1BCA05300088BA86 /* FeedModel.m in Sources */,
+				267F28FE1BD1D85C004BB9AC /* EventosTableViewController.m in Sources */,
+				263A734D1BD330C30002D58D /* EventoViewController.m in Sources */,
 				2663C23A1BC9F8DA0088BA86 /* AppDelegate.m in Sources */,
+				267F29041BD1DE2B004BB9AC /* EventosModel.m in Sources */,
+				267F29011BD1D8AC004BB9AC /* EventoTableViewCell.m in Sources */,
+				26C421AD1BCA0CFE00DCEC77 /* Mensajes.m in Sources */,
+				269483731BD123C1001C5B21 /* InformacionViewController.m in Sources */,
+				2689BF011BCC66F500AB02D9 /* TimelineCuentaTwitter.m in Sources */,
 				2663C2371BC9F8DA0088BA86 /* main.m in Sources */,
+				2663C2541BCA00A00088BA86 /* FeedTableViewController.m in Sources */,
+				2618F27A1BCC93B800A04DC8 /* TimelineHashtagTwitter.m in Sources */,
+				2689BEFE1BCC34F600AB02D9 /* SidebarTableViewController.m in Sources */,
+				263A73501BD332160002D58D /* ConsultasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,23 +471,33 @@
 		};
 		2663C24A1BC9F8DA0088BA86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5A716B1080585B66DBBFF3 /* Pods-app-cut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "app-cut/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cut.app-cut";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2663C24B1BC9F8DA0088BA86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77082522FDB8E2A3656E578 /* Pods-app-cut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "app-cut/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cut.app-cut";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -300,6 +520,7 @@
 				2663C24B1BC9F8DA0088BA86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

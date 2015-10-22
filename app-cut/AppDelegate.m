@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Se configura la app de twitter
+    [Fabric with:@[[Twitter class]]];
+    
+    
+    
     return YES;
 }
 
