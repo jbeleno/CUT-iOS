@@ -102,7 +102,7 @@ static NSString * const articuloCellIdentifier = @"celdaArticulo";
     gradientMask.frame = cell.imagen.bounds;
     gradientMask.colors = @[(id)[UIColor clearColor].CGColor,
                             (id)[UIColor colorWithWhite:0.0f alpha:0.6f].CGColor,
-                            (id)[UIColor colorWithWhite:0.0f alpha:0.75f].CGColor
+                            (id)[UIColor colorWithWhite:0.0f alpha:1.0f].CGColor
                             ];
     [cell.imagen.layer insertSublayer:gradientMask atIndex:0];
     
