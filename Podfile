@@ -5,6 +5,7 @@ target 'app-cut' do
 
 pod "AFNetworking", "~> 2.0"
 pod "SWRevealViewController", "~> 2.0"
+pod 'Google/Analytics', '~> 1.0.0'
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'TwitterCore'
