@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AFHTTPRequestOperationManager.h"
 #import "UIImageView+AFNetworking.h"
+#import <Google/Analytics.h>
 
 @interface EventoViewController : UIViewController
 

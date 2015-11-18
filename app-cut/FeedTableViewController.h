@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Google/Analytics.h>
 #import "FeedModel.h"
 #import "ArticulosTableViewCell.h"
 #import "UIImageView+AFNetworking.h"

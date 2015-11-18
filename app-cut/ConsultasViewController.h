@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "AFHTTPRequestOperationManager.h"
+#import <Google/Analytics.h>
 
 
 @interface ConsultasViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>

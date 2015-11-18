@@ -9,6 +9,9 @@
 #import "EventosTableViewController.h"
 static NSString * const eventoCellIdentifier = @"celdaEvento";
 
+static NSString * const analyticsViewName = @"Eventos";
+
+
 @interface EventosTableViewController ()
 
 @property (strong, nonatomic) EventosModel * modelo;
@@ -44,6 +47,12 @@ static NSString * const eventoCellIdentifier = @"celdaEvento";
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
 
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:analyticsViewName];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 
 /*

@@ -8,6 +8,7 @@
 
 #import "FeedTableViewController.h"
 static NSString * const articuloCellIdentifier = @"celdaArticulo";
+static NSString * const analyticsViewName = @"Feed";
 
 @interface FeedTableViewController ()
 
@@ -49,6 +50,12 @@ static NSString * const articuloCellIdentifier = @"celdaArticulo";
         [self.sidebarButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:analyticsViewName];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 
 /*

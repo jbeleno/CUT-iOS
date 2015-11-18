@@ -12,6 +12,7 @@
 #import "UIImageView+AFNetworking.h"
 #import "SWRevealViewController.h"
 #import "EventoViewController.h"
+#import <Google/Analytics.h>
 
 @interface EventosTableViewController : UITableViewController
 

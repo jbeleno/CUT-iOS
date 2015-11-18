@@ -9,6 +9,8 @@
 #import "EventoViewController.h"
 #define URL_EVENTO @"http://52.27.16.14/cut/eventos/detalle"
 
+static NSString * const analyticsViewName = @"Evento";
+
 @interface EventoViewController ()
 
 @end
@@ -19,6 +21,12 @@
     [super viewDidLoad];
     
     [self cargarEvento];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:analyticsViewName];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 
 - (void)didReceiveMemoryWarning {

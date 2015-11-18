@@ -19,6 +19,10 @@
     // Se configura la app de twitter
     [Fabric with:@[[Twitter class]]];
     
+    // Configure tracker from GoogleService-Info.plist.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services: %@", configureError);
     
     
     return YES;

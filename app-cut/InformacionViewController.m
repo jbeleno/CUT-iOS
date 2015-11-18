@@ -8,6 +8,9 @@
 
 #import "InformacionViewController.h"
 
+static NSString * const analyticsViewName = @"Información";
+
+
 @interface InformacionViewController ()
 
 @end
@@ -25,6 +28,12 @@
         [self.sidebarButton setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:analyticsViewName];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 
 @end

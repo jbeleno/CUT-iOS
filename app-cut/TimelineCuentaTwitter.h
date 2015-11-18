@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <TwitterKit/TwitterKit.h>
 #import "SWRevealViewController.h"
+#import <Google/Analytics.h>
 
 @interface TimelineCuentaTwitter : TWTRTimelineViewController
 

@@ -10,26 +10,27 @@
 		2618F2751BCC6D5C00A04DC8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2620FD0A1BCC6B3700752FF5 /* Accounts.framework */; };
 		2618F2761BCC6D7400A04DC8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2620FD081BCC6B2E00752FF5 /* Social.framework */; };
 		2618F2771BCC6D7A00A04DC8 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2618F2731BCC6B6D00A04DC8 /* Twitter.framework */; };
-		2618F27A1BCC93B800A04DC8 /* TimelineHashtagTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2618F2791BCC93B800A04DC8 /* TimelineHashtagTwitter.m */; settings = {ASSET_TAGS = (); }; };
-		263A734A1BD32C610002D58D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A73491BD32C610002D58D /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
-		263A734D1BD330C30002D58D /* EventoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A734C1BD330C30002D58D /* EventoViewController.m */; settings = {ASSET_TAGS = (); }; };
-		263A73501BD332160002D58D /* ConsultasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A734F1BD332160002D58D /* ConsultasViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2618F27A1BCC93B800A04DC8 /* TimelineHashtagTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2618F2791BCC93B800A04DC8 /* TimelineHashtagTwitter.m */; };
+		263A734A1BD32C610002D58D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A73491BD32C610002D58D /* WebViewController.m */; };
+		263A734D1BD330C30002D58D /* EventoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A734C1BD330C30002D58D /* EventoViewController.m */; };
+		263A73501BD332160002D58D /* ConsultasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263A734F1BD332160002D58D /* ConsultasViewController.m */; };
 		2663C2371BC9F8DA0088BA86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2361BC9F8DA0088BA86 /* main.m */; };
 		2663C23A1BC9F8DA0088BA86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2391BC9F8DA0088BA86 /* AppDelegate.m */; };
 		2663C2401BC9F8DA0088BA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663C23E1BC9F8DA0088BA86 /* Main.storyboard */; };
 		2663C2421BC9F8DA0088BA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2411BC9F8DA0088BA86 /* Assets.xcassets */; };
 		2663C2451BC9F8DA0088BA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2663C2431BC9F8DA0088BA86 /* LaunchScreen.storyboard */; };
-		2663C2541BCA00A00088BA86 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2531BCA00A00088BA86 /* FeedTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2663C2571BCA00D20088BA86 /* ArticulosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2561BCA00D20088BA86 /* ArticulosTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		2663C25A1BCA05300088BA86 /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2591BCA05300088BA86 /* FeedModel.m */; settings = {ASSET_TAGS = (); }; };
-		267F28FE1BD1D85C004BB9AC /* EventosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F28FD1BD1D85C004BB9AC /* EventosTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		267F29011BD1D8AC004BB9AC /* EventoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F29001BD1D8AC004BB9AC /* EventoTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		267F29041BD1DE2B004BB9AC /* EventosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F29031BD1DE2B004BB9AC /* EventosModel.m */; settings = {ASSET_TAGS = (); }; };
-		2689BEFE1BCC34F600AB02D9 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689BEFD1BCC34F600AB02D9 /* SidebarTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		2689BF011BCC66F500AB02D9 /* TimelineCuentaTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689BF001BCC66F500AB02D9 /* TimelineCuentaTwitter.m */; settings = {ASSET_TAGS = (); }; };
-		269483731BD123C1001C5B21 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269483721BD123C1001C5B21 /* InformacionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		269995011BD4497E007AD77B /* LabelAjustado.m in Sources */ = {isa = PBXBuildFile; fileRef = 269995001BD4497E007AD77B /* LabelAjustado.m */; settings = {ASSET_TAGS = (); }; };
-		26C421AD1BCA0CFE00DCEC77 /* Mensajes.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C421AC1BCA0CFE00DCEC77 /* Mensajes.m */; settings = {ASSET_TAGS = (); }; };
+		2663C2541BCA00A00088BA86 /* FeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2531BCA00A00088BA86 /* FeedTableViewController.m */; };
+		2663C2571BCA00D20088BA86 /* ArticulosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2561BCA00D20088BA86 /* ArticulosTableViewCell.m */; };
+		2663C25A1BCA05300088BA86 /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2663C2591BCA05300088BA86 /* FeedModel.m */; };
+		267F28FE1BD1D85C004BB9AC /* EventosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F28FD1BD1D85C004BB9AC /* EventosTableViewController.m */; };
+		267F29011BD1D8AC004BB9AC /* EventoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F29001BD1D8AC004BB9AC /* EventoTableViewCell.m */; };
+		267F29041BD1DE2B004BB9AC /* EventosModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F29031BD1DE2B004BB9AC /* EventosModel.m */; };
+		2689BEFE1BCC34F600AB02D9 /* SidebarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689BEFD1BCC34F600AB02D9 /* SidebarTableViewController.m */; };
+		2689BF011BCC66F500AB02D9 /* TimelineCuentaTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689BF001BCC66F500AB02D9 /* TimelineCuentaTwitter.m */; };
+		269483731BD123C1001C5B21 /* InformacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269483721BD123C1001C5B21 /* InformacionViewController.m */; };
+		269995011BD4497E007AD77B /* LabelAjustado.m in Sources */ = {isa = PBXBuildFile; fileRef = 269995001BD4497E007AD77B /* LabelAjustado.m */; };
+		26C421AD1BCA0CFE00DCEC77 /* Mensajes.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C421AC1BCA0CFE00DCEC77 /* Mensajes.m */; };
+		9F3CA27C1BFC349F0001E62A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F3CA27B1BFC349F0001E62A /* GoogleService-Info.plist */; };
 		F2E421917A6B2D2F3DC6FA00 /* libPods-app-cut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9466C71B820EB331A92D6F /* libPods-app-cut.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		26C421AB1BCA0CFE00DCEC77 /* Mensajes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mensajes.h; sourceTree = "<group>"; };
 		26C421AC1BCA0CFE00DCEC77 /* Mensajes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mensajes.m; sourceTree = "<group>"; };
 		8F9466C71B820EB331A92D6F /* libPods-app-cut.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app-cut.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3CA27B1BFC349F0001E62A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA5A716B1080585B66DBBFF3 /* Pods-app-cut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-cut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app-cut/Pods-app-cut.debug.xcconfig"; sourceTree = "<group>"; };
 		E77082522FDB8E2A3656E578 /* Pods-app-cut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app-cut.release.xcconfig"; path = "Pods/Target Support Files/Pods-app-cut/Pods-app-cut.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				263A73491BD32C610002D58D /* WebViewController.m */,
 				2663C2411BC9F8DA0088BA86 /* Assets.xcassets */,
 				2663C2431BC9F8DA0088BA86 /* LaunchScreen.storyboard */,
+				9F3CA27B1BFC349F0001E62A /* GoogleService-Info.plist */,
 				2663C2461BC9F8DA0088BA86 /* Info.plist */,
 				2663C2351BC9F8DA0088BA86 /* Supporting Files */,
 			);
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2663C2451BC9F8DA0088BA86 /* LaunchScreen.storyboard in Resources */,
+				9F3CA27C1BFC349F0001E62A /* GoogleService-Info.plist in Resources */,
 				2663C2421BC9F8DA0088BA86 /* Assets.xcassets in Resources */,
 				2663C2401BC9F8DA0088BA86 /* Main.storyboard in Resources */,
 			);
