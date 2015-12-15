@@ -9,6 +9,7 @@ pod 'Google/Analytics', '~> 1.0.0'
 pod 'Fabric'
 pod 'TwitterKit'
 pod 'TwitterCore'
+pod 'Parse'
 
 end
 

@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Bolts/Tasks (1.5.0)
   - Fabric (1.5.5):
     - Fabric/Base (= 1.5.5)
   - Fabric/Base (1.5.5)
@@ -36,6 +37,8 @@ PODS:
   - GoogleSymbolUtilities (1.0.3)
   - GoogleUtilities (1.1.0):
     - GoogleSymbolUtilities (~> 1.0.0)
+  - Parse (1.11.0):
+    - Bolts/Tasks (~> 1.5)
   - SWRevealViewController (2.3.0)
   - TwitterCore (1.11.4)
   - TwitterKit (1.11.4)
@@ -44,18 +47,21 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - Fabric
   - Google/Analytics (~> 1.0.0)
+  - Parse
   - SWRevealViewController (~> 2.0)
   - TwitterCore
   - TwitterKit
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
   Fabric: 190bf1a6eb65f7500de1347d027d2e59a7e53db1
   Google: 875f5a8ade86dd02e36586e4a54814843938c7f6
   GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
   GoogleNetworkingUtilities: 292992ab31b7b4ba32809a0e8b40e324cdfb2c0c
   GoogleSymbolUtilities: 82ad9f93d3615244b3f4ce440f5ab2515e8b4f56
   GoogleUtilities: 8ed9134debe11719097881711464752900668f10
+  Parse: 886af46a0a677402f6374bb97ac212e795f70afe
   SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
   TwitterCore: 171dbd2f8d55707397f461af5158d987fb34aa36
   TwitterKit: e96cc8d3bd32d544b8bc6d1b2febf2eab1c5298e
