@@ -11,6 +11,9 @@
 #import <TwitterKit/TwitterKit.h>
 #import <Google/Analytics.h>
 #import <Parse/Parse.h>
+#import <SWRevealViewController/SWRevealViewController.h>
+#import "EventoViewController.h"
+#import "WebViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

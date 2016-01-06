@@ -36,6 +36,55 @@
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     }
     
+    //Si se recibe una notificación se redirige a la vista adecuada
+    NSDictionary *userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+    NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
+    
+    if(apsInfo) {
+        NSString *vista = [userInfo objectForKey:@"vista"];
+        NSString *identificador = [userInfo objectForKey:@"id"];
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UINavigationController *navController;
+        SWRevealViewController *reveal = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Reveal"];
+        
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+        
+        if([vista isEqualToString:@"evento"]){
+            
+            self.window.rootViewController = reveal;
+            [self.window makeKeyAndVisible];
+            
+            navController = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"navEventos"];
+            
+            EventoViewController *eventoController = (EventoViewController*) [storyboard instantiateViewControllerWithIdentifier:@"vistaEvento"];
+            eventoController.idEvento = identificador;
+            
+            [navController pushViewController:eventoController animated:YES];
+
+            
+            [reveal setFrontViewController:navController];
+            [reveal setFrontViewPosition: FrontViewPositionLeft animated: YES];
+            
+        }else if ([vista isEqualToString:@"noticia"]){
+            self.window.rootViewController = reveal;
+            [self.window makeKeyAndVisible];
+            
+            navController = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"navNoticias"];
+            
+            WebViewController *eventoController = (WebViewController*) [storyboard instantiateViewControllerWithIdentifier:@"vistaNoticia"];
+            eventoController.url = identificador;
+            
+            [navController pushViewController:eventoController animated:YES];
+            
+            
+            [reveal setFrontViewController:navController];
+            [reveal setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        }
+    }
+
+    
     
     return YES;
 }
