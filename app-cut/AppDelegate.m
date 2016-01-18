@@ -22,6 +22,10 @@
     
     // Se configura la app de twitter
     [Fabric with:@[[Twitter class]]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *deviceTokenParse = [defaults objectForKey:@"deviceToken"];
+    NSLog(@"TOKEN = %@",deviceTokenParse);
     
     // Configure tracker from GoogleService-Info.plist.
     NSError *configureError;
@@ -36,6 +40,24 @@
         [[UIApplication sharedApplication] registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     }
     
+    // copia de un 1doc3
+    if(launchOptions != nil)
+    { // LaunchOptions con contenido (viene de notificacion)
+        NSDictionary *userInfo = nil;
+        userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
+        if (userInfo != nil) {
+            [self manageNotification:userInfo];
+        }
+        else
+        { // No viene de notificacion
+            self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+        }
+    }
+    else
+    { // LaunchOptions null
+        self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    }
+    /*
     //Si se recibe una notificación se redirige a la vista adecuada
     NSDictionary *userInfo = [launchOptions valueForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
     NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
@@ -82,11 +104,55 @@
             [reveal setFrontViewController:navController];
             [reveal setFrontViewPosition: FrontViewPositionLeft animated: YES];
         }
-    }
+    }*/
 
     
     
     return YES;
+}
+
+-(void)manageNotification:(NSDictionary*)apsInfo{
+    NSString *vista = [apsInfo objectForKey:@"vista"];
+    NSString *identificador = [apsInfo objectForKey:@"id"];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *navController;
+    SWRevealViewController *reveal = (SWRevealViewController *)[storyboard instantiateViewControllerWithIdentifier:@"Reveal"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
+    if([vista isEqualToString:@"evento"]){
+        
+        self.window.rootViewController = reveal;
+        [self.window makeKeyAndVisible];
+        
+        navController = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"navEventos"];
+        
+        EventoViewController *eventoController = (EventoViewController*) [storyboard instantiateViewControllerWithIdentifier:@"vistaEvento"];
+        eventoController.idEvento = identificador;
+        
+        [navController pushViewController:eventoController animated:YES];
+        
+        
+        [reveal setFrontViewController:navController];
+        [reveal setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        
+    }else if ([vista isEqualToString:@"noticia"]){
+        self.window.rootViewController = reveal;
+        [self.window makeKeyAndVisible];
+        
+        navController = (UINavigationController *)[storyboard instantiateViewControllerWithIdentifier:@"navNoticias"];
+        
+        WebViewController *eventoController = (WebViewController*) [storyboard instantiateViewControllerWithIdentifier:@"vistaNoticia"];
+        eventoController.url = identificador;
+        
+        [navController pushViewController:eventoController animated:YES];
+        
+        
+        [reveal setFrontViewController:navController];
+        [reveal setFrontViewPosition: FrontViewPositionLeft animated: YES];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -133,6 +199,7 @@
 }
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    NSLog(@"Se recibió algo");
     [PFPush handlePush:userInfo];
 }
 
