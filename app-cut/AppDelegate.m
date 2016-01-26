@@ -202,8 +202,8 @@
 }
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
-    NSLog(@"Se recibió algo");
     [PFPush handlePush:userInfo];
+    [self manageNotification:userInfo];
 }
 
 @end
